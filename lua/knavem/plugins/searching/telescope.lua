@@ -29,5 +29,7 @@ return {
         keymap.set("n", "<leader>fb", builtin.buffers, { desc="Search Buffers" })
         keymap.set("n", "<leader>fr", builtin.live_grep, { desc="Search using Ripgrep" })
         keymap.set("n", "<leader>fs", builtin.current_buffer_fuzzy_find, { desc="Search in Buffer" })
+        keymap.set("n", "<leader>gf", builtin.git_status, { desc = "Git Status Search"})
+        keymap.set("n", "<leader>gl", builtin.git_commits, { desc = "Git Commit Search" })
     end,
 }

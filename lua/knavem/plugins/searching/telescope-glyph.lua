@@ -5,7 +5,7 @@ return {
         "searching-telescope"
     },
     keys = {
-        { "<leader>fg", "<cmd>Telescope glyph<CR>", desc="Search Unicode Character" }
+        { "<leader>fu", "<cmd>Telescope glyph<CR>", desc="Search Unicode Character" }
     },
     config = function(_, opts)
         -- Calling telescope's setup from multiple specs does not hurt, it will happily merge the
