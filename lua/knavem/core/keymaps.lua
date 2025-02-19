@@ -5,8 +5,10 @@ local keymap = vim.keymap
 -- 
 -- buffer shortcuts
 --
+keymap.set("n", "<leader>q", "<cmd>bd<CR>", { desc = "Quick Close Buffer" })
 keymap.set("n", "<leader>bd", "<cmd>bd<CR>", { desc = "Close Buffer" })
-keymap.set("n", "<leader>bb", ":ls<cr>:b<Space>", { desc = "Quick Buffer List Select" })
+keymap.set("n", "<leader>bb", "<cmd>bprevious<CR>", { desc = "Goto Previous Buffer" })
+keymap.set("n", "<leader>bl", ":ls<cr>:b<Space>", { desc = "Quick Buffer List Select" })
 
 --
 -- split management

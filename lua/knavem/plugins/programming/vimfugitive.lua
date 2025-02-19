@@ -7,6 +7,6 @@ return {
         { "<leader>gd", "<cmd>Gvdiff<CR>", desc = "Current File Diff" },
         { "<leader>gb", "<cmd>Git blame<CR>", desc = "Current File Blame"},
         { "<leader>gc", "<cmd>Git commit<CR>", desc = "Git Commit"},
-        { "<leader>gp", "<cmd>Git push<CR>", desc = "Push Commits"},
+        { "<leader>gP", "<cmd>Git push<CR>", desc = "Push Commits"},
     },
 }
