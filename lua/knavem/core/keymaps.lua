@@ -27,3 +27,4 @@ keymap.set("n", "<M-k>", ":resize -1<CR>")
 -- Windows Specific Keymaps
 --
 keymap.set("n", "<leader>,,", "<cmd>cd C:/Users/josinski/AppData/Local/nvim<CR>")
+keymap.set("n", "<leader>,.", "<cmd>cd C:/Users/josinski/AppData/Roaming/Documents/orgg<CR>")
