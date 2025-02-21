@@ -5,9 +5,17 @@ return {
     dependencies = {
         "nvim-tree/nvim-web-devicons"
     },
-    opts = {
-        -- additional config goes here
-    },
+    config = function ()
+        local wk = require("which-key")
+        wk.add({
+            {"<leader>b", desc = "Buffer Commands"},
+            {"<leader>f", desc = "Search Commands"},
+            {"<leader>g", desc = "Git Commands"},
+            {"<leader>p", desc = "Project Commands"},
+            {"<leader>t", desc = "Tree Commands"},
+            {"<leader>,", desc = "Misc Commands"},
+        })
+    end,
     keys = {
         {
             "<leader>?",
