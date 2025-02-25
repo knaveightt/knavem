@@ -1,3 +1,6 @@
+-- globals
+vim.g.markdown_folding = 1 -- for markdown folding
+
 -- set options
 local options = {
     termguicolors = true,  -- plugins require this to allow correct colors

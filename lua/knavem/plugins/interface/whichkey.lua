@@ -13,6 +13,7 @@ return {
             {"<leader>g", desc = "Git Commands"},
             {"<leader>p", desc = "Project Commands"},
             {"<leader>t", desc = "Tree Commands"},
+            {"<leader>o", desc = "Productivity"},
             {"<leader>,", desc = "Misc Commands"},
         })
     end,

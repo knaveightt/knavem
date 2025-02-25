@@ -17,15 +17,16 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Setup lazy.nvim
 require("lazy").setup({
-  spec = {
-    -- import your plugins
-    { import = "knavem.plugins.interface" },
-    { import = "knavem.plugins.searching" },
-    { import = "knavem.plugins.programming" },
-  },
+    spec = {
+        -- import your plugins
+        { import = "knavem.plugins.interface" },
+        { import = "knavem.plugins.searching" },
+        { import = "knavem.plugins.programming" },
+        { import = "knavem.plugins.productivity" },
+    },
 
-  -- disable luarocks support for now
-  rocks = {
-      enabled = false
-  },
+    -- disable luarocks support for now
+    rocks = {
+        enabled = false
+    },
 })
