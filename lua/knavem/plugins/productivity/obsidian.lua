@@ -21,6 +21,17 @@ return {
             alias_format = "%B %d, %Y",
         },
 
+        templates = {
+            folder = "ObsidianTemplates",
+            date_format = "%Y-%m-%d-%a",
+            time_format = "%H:%M",
+            substitutions = {
+                yesterday = function()
+                    return os.date("%Y-%m-%d", os.time() - 86400)
+                end
+            }
+        },
+
         mappings = {
             -- toggle check boxes
             ["<leader>oc"] = {
@@ -56,6 +67,7 @@ return {
     keys = {
         {"<leader>os", "<cmd>ObsidianSearch<CR>", desc = "Search Notes" },
         {"<leader>ot", "<cmd>ObsidianTags<CR>", desc = "Search by Tag" },
+        {"<leader>oT", "<cmd>ObsidianNewFromTemplate<CR>", desc = "Note from Template" },
         {"<leader>oi", "<cmd>ObsidianTemplate<CR>", desc = "Insert Template" },
         {"<leader>on", "<cmd>ObsidianNew<CR>", desc = "New Note" },
         {"<leader>od", "<cmd>ObsidianToday<CR>", desc = "Open Daily Note" },
