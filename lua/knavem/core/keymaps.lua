@@ -9,6 +9,8 @@ keymap.set("n", "Q", "q") -- remap creating macros to capital Q
 keymap.set("n", "q", "<cmd>bd<CR>") -- so that I can use 'q' to close buffers
 keymap.set("n", "<leader>bp", "<cmd>bprevious<CR>", { desc = "Goto Previous Buffer" })
 keymap.set("n", "<leader>bb", ":ls<cr>:b<Space>", { desc = "Quick Buffer List Select" })
+keymap.set("n", "<leader>bs", "<cmd>b#<CR>", { desc = "Prior Buffer Quick Switch" })
+
 
 --
 -- split management
