@@ -11,7 +11,6 @@ keymap.set("n", "<leader>bp", "<cmd>bprevious<CR>", { desc = "Goto Previous Buff
 keymap.set("n", "<leader>bb", ":ls<cr>:b<Space>", { desc = "Quick Buffer List Select" })
 keymap.set("n", "<leader>bs", "<cmd>b#<CR>", { desc = "Prior Buffer Quick Switch" })
 
-
 --
 -- split management
 --
